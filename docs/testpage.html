@@ -55,6 +55,39 @@ img {
 
 .default {background-color: #e7e7e7; color: black;} /* Gray */
 .default:hover {background: #ddd;}
+
+
+/* Make an input blend into its parent */
+input.inline-edit{
+  /* Eliminate borders and padding */
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  /* Inherit the parent element's typography */
+  font: inherit;
+  color: inherit;
+background-color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  text-align: inherit;
+
+  /* Seems to help alignment in headers */
+  vertical-align: top;
+}
+
+/* Add interaction cues on hover and focus */
+input.inline-edit:hover,
+input.inline-edit:focus{
+  /* Change the background to a light yellow */
+  background-color: #FFD;
+
+  /* A subtle transition never hurts */
+  -webkit-transition: background-color 0.5s;
+     -moz-transition: background-color 0.5s;
+      -ie-transition: background-color 0.5s;
+          transition: background-color 0.5s;
+}
 </style>
 </head>
 <body>
@@ -92,6 +125,18 @@ img {
     <p>5 <i class="fas fa-award"></i></p>
     <p>For staying on the dry</p>
     <button class="btn success"><i class="fa fa-plus-circle"></i> Award</button>
+  </div>
+</div>
+<br/>
+<div class="card" style="background-color: lightgreen">
+  <div class="container">
+  <br/><br/>
+    <input class="inline-edit" style="font-size: 1.1em; font-weight: bold;" type="text" value="Gym Bunnie"></input><button class="btn infoFadeIn"><i class="fas fa-ellipsis-v"></i></button>
+    <p>IOU John Smith (Me)</p>
+    <p>12 <i class="fas fa-star" style="color: gold;"></i></p>
+    <input class="inline-edit" style="width: 90%;" type="text" value="For going to Gym twice a week"></input>
+    <br/><br/>
+    <button class="btn success"><i class="far fa-star"></i> Star</button>
   </div>
 </div>
 <br/>
