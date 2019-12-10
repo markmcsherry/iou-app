@@ -1,0 +1,11 @@
+{
+    "expressSettings": {
+        "version": "beta 0.1",
+        "publicPath": "../client/public",
+        "serverPort": "4000",
+        "morganFormat": "dev"
+    },
+    "dbSettings":{
+      "dbURI": "mongodb://localhost:27017/iou"
+    }
+  }
