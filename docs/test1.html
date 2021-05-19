@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Card Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+<i class="fas fa-wind" style="color: black;"></i>
+
+<!-- https://www.flaticon.com/free-icon/oxygen-mask_1667685?related_id=1667685&origin=search -->
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-color: lightblue;  color: black;">
+      <h1>Oxygen</h1>
+      <h2>Indications <i class="fas fa-lungs" style="color: black;"></i></h2>
+      <p>Low ventilation Adult 94% Child 96%</p>
+      <h2>Contra-Indications</h2>
+      <p>Bleomycin</p>
+    </div>
+    <div class="flip-card-back" style="background-color: #2980b9;  color: black;">
+      <h1>Oxygen <i class="fas fa-wind" style="color: white;"></i></h1> 
+      <h2>Side Effects</h2>
+      <p>Ventilation too long COPD will cause...</p> 
+      <h2>Dose</h2>
+      <p>15 l/min then titrate to &gt; 94%</p>
+    </div>
+  </div>
+</div>`
+
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front" style="background-color: lightgreen;">
+        <h1>Asprin</h1>
+        <h2>Indications <i class="fas fa-heartbeat" style="color: black;"></i></h2>
+        <p>Chest Pain, Suspected MI</p>
+        <h2>Contra-Indications</h2>
+        <p>
+            <b>A</b>ge &lt; 16,<br/>
+            <b>B</b>leeding disorder,<br/>
+            <b>B</b>leeding ulcer,<br/>
+            <b>A</b>lergy-KSAR</p>
+      </div>
+      <div class="flip-card-back" style="background-color: lightgreen;  color: black;">
+        <h1>Asprin <i class="fas fa-tablets" style="color: white;"></i></h1> 
+        <h2>Side Effects</h2>
+        <p>
+            <b>B</b>ronchospasm,<br/>
+            <b>E</b>pigastric pain/discomfort,<br/>
+            <b>G</b>astro Intestinal bleeding,<br/> 
+            <b>I</b>creased bleeding time,<br/>
+            <b>S</b>kin hypersensitivity
+        </p> 
+        <h2>Dose</h2>
+        <p>300mg Tabled (Disolved in small amount of water or chewed)</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
