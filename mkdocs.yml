@@ -1,0 +1,10 @@
+site_name: My Docs
+nav:
+    - Home: index.md
+    - Build: build.md
+    - Sample Page: testpage.html
+    - About: about.md
+
+repo_url: https://github.com/markmcsherry/iou-app
+edit_uri: blob/main/docs/
+docs_dir: docs
